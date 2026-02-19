@@ -1,7 +1,9 @@
-export default function Page() {
+
+export default function Page3() {
   return (
-    <div className="flex min-h-screen items-center justify-center">
-      <h1 className="text-2xl">测试页面3</h1>
+    <div className="min-h-screen flex items-center justify-center bg-background">
+      <h1 className="text-4xl font-bold text-foreground">页面3.2</h1>
+
     </div>
   )
 }
