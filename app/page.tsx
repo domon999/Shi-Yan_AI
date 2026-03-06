@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Video, Mic, Sparkles, ArrowRight } from 'lucide-react'
+import { Video, Mic, Sparkles, ArrowRight, ImageIcon } from 'lucide-react'
 
 export default function HomePage() {
   const pages = [
@@ -31,6 +31,15 @@ export default function HomePage() {
       color: 'text-purple-500',
       bgColor: 'bg-purple-500/10',
       features: ['同步/异步TTS', '音色快速克隆', '100+系统音色', '多音频格式'],
+    },
+    {
+      title: 'Gemini 图片生成',
+      description: '基于 Google Gemini API 的图片生成工具，支持文生图、参考图编辑、宽高比控制',
+      path: '/banana',
+      icon: ImageIcon,
+      color: 'text-green-500',
+      bgColor: 'bg-green-500/10',
+      features: ['文本生成图片', '参考图编辑', '宽高比控制', '多模型支持'],
     },
   ]
 
